@@ -12,4 +12,6 @@ const camelize = (str) => {
     .replace(/\s+/g, "")
 }
 
-module.exports = { sleep, camelize }
+export const gql = String.raw
+
+module.exports = { sleep, camelize, gql }
