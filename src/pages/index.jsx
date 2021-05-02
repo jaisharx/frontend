@@ -8,7 +8,6 @@ const IndexPage = ({ tweets, resources, cities, lastUpdated }) => {
       <Navbar lastUpdated={lastUpdated} />
       <Dashboard
         data={{
-          tweets,
           resources,
           cities,
           city: null,

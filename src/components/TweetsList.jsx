@@ -89,16 +89,13 @@ const TweetsList = React.memo(({ city: location, resource }) => {
   } else if (data.length > 0) {
     // Tweets
     return (
-      <>
+      <div className="flex flex-col space-y-4 py-4 justify-center items-center lg:h-auto lg:overflow-y-auto lg:w-6/12 pb-4">
+        <div className="font-medium lg:text-base text-sm bg-white rounded-md shadow-lg border border-gray-400 px-4 py-2 z-10 whitespace-pre-wrap">
+          Please beware of fraudsters. Do your due diligence and do not pay for
+          anything in advance.
+        </div>
         {data.map(({ id: tweetId, url: tweetUrl, status: voteCount }) => {
-          return (
-            <div
-              key={tweetId}
-              className="w-full flex flex-col items-center justify-center space-y-4 my-2 px-2"
-            >
-              <Tweet id={tweetId} />
-            </div>
-          )
+          return <Tweet key={tweetId} id={tweetId} />
         })}
         {loading && <Loader />}
         {data.length % 20 == 0 && (
@@ -111,7 +108,7 @@ const TweetsList = React.memo(({ city: location, resource }) => {
             <HiChevronDoubleDown />
           </button>
         )}
-      </>
+      </div>
     )
   } else {
     // Error

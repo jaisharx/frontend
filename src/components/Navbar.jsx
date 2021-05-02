@@ -5,7 +5,7 @@ import Logo from "../assets/Logo.svg"
 
 export default function Navbar({ lastUpdated = 6 }) {
   return (
-    <Disclosure as="nav" className="shadow-lg bg-white w-full">
+    <Disclosure as="nav" className="shadow-lg fixed top-0 z-30 bg-white w-full">
       {({ open }) => (
         <>
           <div className="flex items-center justify-between w-full h-16 px-4 lg:px-20">

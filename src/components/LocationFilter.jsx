@@ -74,7 +74,7 @@ export default function LocationFilter({ data, city, resource }) {
   }
 
   return !cityState ? (
-    <div className="shadow-md bg-white box-border h-auto w-full rounded-md my-2 p-3 lg:p-6 border border-gray-200">
+    <div className="shadow-md bg-white box-border h-auto w-full rounded-md p-3 lg:p-6 border border-gray-200">
       {/* ICON */}
       <div className="flex ml-1 mb-1">
         <LocationIcon className="h-5 w-5 mt-1" />
@@ -112,7 +112,7 @@ export default function LocationFilter({ data, city, resource }) {
       </div>
     </div>
   ) : (
-    <div className="shadow-md bg-white box-border h-auto w-full rounded-md my-2 p-3 lg:p-6 border border-gray-200">
+    <div className="shadow-md bg-white box-border h-auto w-full rounded-md p-2 lg:p-6 border border-gray-200">
       <div className="flex ml-1 justify-between">
         <div className="flex">
           {/* ICON */}
